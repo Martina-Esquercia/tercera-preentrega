@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Poppins:ital,wght@0,400;0,500;1,400;1,500&family=Roboto:ital@0;1&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header, main {
+  background-color: rgb(146, 239, 210);
+}
+
+body {
+  background-color: rgb(146, 239, 210);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.foto {
+  border: solid 4px beige;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+section h1 {
+  background: rgb(0, 193, 150);
+  background: linear-gradient(69deg, rgb(0, 193, 150) 15%, rgb(0, 193, 148) 37%, rgb(65, 200, 169) 56%, rgb(51, 232, 192) 80%, rgb(80, 231, 189) 100%);
+  font-family: "Lobster Two", cursive;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 50px;
+  color: whitesmoke;
+  padding: 20px;
+  margin: 20px 40px 20px 40px;
+}
+section .subtitulo {
+  font-family: "Lobster Two", cursive;
+  text-align: center;
+  font-size: 25px;
+  font-weight: lighter;
+  color: rgb(247, 251, 251);
+  margin-top: 10px;
+  margin-bottom: 18px;
+}
+
+footer {
+  background-color: white;
+  margin-top: 20px;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+
+article {
+  background-color: aliceblue;
+  margin-top: 10px;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.foto {
+  height: 300px;
+  width: 300px;
+}
+
+.class-ej-extend, nav, h1, .en-dientes {
+  border: 3px double black;
+}
+
+.en-dientes {
+  background-color: rgb(196, 246, 242);
+  font-style: normal;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 8px;
+  padding: 10px;
+}
+
+
+.div-gen-evento .tipoevent {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  background-color: rgb(178, 185, 185);
+  margin: 13px;
+  padding: 13px;
+  border: 1px solid rgb(41, 40, 40);
+}
+.div-gen-evento .tipoevent .niveldefiesta {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  line-height: 25px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(251, 108, 108, 0.813);
+}
+
+.tipoevent {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  background-color: rgb(178, 185, 185);
+  margin: 13px;
+  padding: 13px;
+  border: 1px solid rgb(41, 40, 40);
+}
+.tipoevent .niveldefiesta {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  line-height: 25px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(251, 108, 108, 0.813);
+}
+
+nav {
+  padding: 30px;
+  text-align: center;
+}
+
+.colorcito {
+  background-color: rgb(169, 237, 214);
+
+}
+
+header{
+  grid-area: header;
+}
+
+.section-titulo{
+  grid-area: section-titulo;
+}
+.imagen-general{
+  grid-area: imagen-general;
+
+}
+
+article{
+  grid-area: article;
+}
+
+footer{
+  grid-area: footer;
+}
+
+.img-gen{
+  
+  display: grid;
+  grid-template-areas: 
+  "header"
+  "section-titulo"
+  "imagen-general"
+  "article"
+  "footer";
+  }
+
+  @media (min-width: 480px){
+    .img-gen{
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 
+      "header header"
+      "section-titulo section-titulo"
+      "imagen-general imagen-general"
+      "article article"
+      "footer footer";
+    }
+
+    .foto{
+      border: solid 3px black;
+      max-height: 240px;
+      max-width:  240px;
+  }
+  }
+
+  @media (min-width: 768px){
+    .img-gen{
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas: 
+      "header header header"
+      "section-titulo section-titulo section-titulo"
+      "imagen-general imagen-general imagen-general"
+      "article article"
+      "footer footer footer";
+    }
+
+    .clas-event, .clas-cont{
+      margin-left: 250px;
+      margin-right: 250px;
+  }
+  .div-gen-evento {
+    background-color: rgb(146, 239, 210);
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+  }
+  .en-dientes{
+    background-color:  rgb(146, 239, 210);
+    background-color: aliceblue;
+    border: double 3px black;
+    margin-left: 170px;
+    margin-right: 170px;
+}
+  
+    .foto{
+      border: solid 3px white;
+      max-height: 250px;
+      max-width:  250px;
+  }
+  .foto:hover{
+        transform: scale(2);
+        transition-property: all;
+        transition-duration: 2s;
+    }
+
+    .icon--:hover{
+        transform: scale(2);
+        transition-property: all;
+        transition-duration: 2s;
+    }
+
+
+    footer{
+      border: 3px double black;
+        background-color: rgb(176, 247, 217);
+        margin-top: 20px;
+        margin-left: 120px;
+            margin-right: 120px;
+    }
+  }
+  
+  @media (min-width: 1024px){
+    
+    article, .fiestass{
+        text-align: center;
+        background-color: aliceblue;
+        border: double 3px black;
+        margin-left: 250px;
+        margin-right: 250px;
+        
+    }
+    .navidad{
+
+        margin-top: 10px;
+    }
+    footer{
+        background: rgb(151,228,211);
+background: linear-gradient(45deg, rgba(151,228,211,1) 15%, rgba(106,247,214,1) 37%, rgba(90,235,201,1) 56%, rgba(51,232,192,1) 80%, rgba(49,208,164,1) 100%);
+        margin-left: 400px;
+        margin-right: 400px;
+    }
+
+    .divfooter{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+
+    li:hover{
+        transform: scale(2);
+        transition: all;
+        transition-duration: 3s;
+    }
+}
+
+ /*Al maquetar las mediacueris, no hice tantos cambios como en la entrega pasada, ya que no los vi necesarios y la verdad en la pasada fueron algo forzados ya que debia demostrar lo aprendido, en esta entrega prefiero ya ir quedandome con los estilos que voy a ir conservando y no cargar mi pagina con estilos que la verdad no quiero.  Como no es obligatorio que haya tantos cambios para hacer mas notorio el responsive, voy a usar los estilos que necesito.  */
+
+/*# sourceMappingURL=estilos.css.map */

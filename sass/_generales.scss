@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Poppins:ital,wght@0,400;0,500;1,400;1,500&family=Roboto:ital@0;1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;}
+
+    ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 10px;
+    }
+
+
+
+a{ text-decoration: none;
+    color: black;
+}
+
+header, main{background-color: rgb(146, 239, 210);}
+
+
+body{
+    background-color: rgb(146, 239, 210);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+.foto{
+    border: solid 4px beige;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+section{
+    h1{
+        background: rgb(0,193,150);
+background: linear-gradient(69deg, rgba(0,193,150,1) 15%, rgba(0,193,148,1) 37%, rgba(65,200,169,1) 56%, rgba(51,232,192,1) 80%, rgba(80,231,189,1) 100%);
+    font-family: 'Lobster Two', cursive;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 50px;
+    color:whitesmoke;
+    padding: 20px;
+    margin: 20px 40px 20px 40px;
+    }
+
+    .subtitulo{
+        font-family: 'Lobster Two', cursive; 
+    text-align: center;
+    font-size: 25px;
+    font-weight: lighter;
+    color:rgb(247, 251, 251);
+    margin-top: 10px;
+    margin-bottom: 18px;
+    }
+}
+
+footer{
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 90px;
+        margin-right: 90px;
+}
+
+article{
+    background-color: aliceblue;
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+        
+    
+}

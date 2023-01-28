@@ -1,0 +1,22 @@
+
+
+
+@mixin sizes ( $width , $height) {
+    height: $height;
+    width: $width;
+}
+
+.foto{
+    @include sizes(300px,300px )
+}
+
+
+
+.class-ej-extend{ 
+    border: 3px double black;
+}
+
+nav, h1 , .en-dientes {
+    @extend .class-ej-extend
+}
+
